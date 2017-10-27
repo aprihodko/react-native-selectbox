@@ -1,31 +1,10 @@
 import React from 'react';
 import { View, Modal, Text, ScrollView, TouchableOpacity } from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome';
+import PropTypes from 'prop-types';
 import styles from './Styles';
 
-export default class Selectbox extends React.Component {
-  static propTypes = {
-    items: React.PropTypes.array,
-    selectedItem: React.PropTypes.object,
-    promptLabel: React.PropTypes.string,
-    cancelLabel: React.PropTypes.string,
-    onChange: React.PropTypes.func,
-    animationType: React.PropTypes.string,
-    transparent: React.PropTypes.bool,
-    style: View.propTypes.style,
-    optionLabelStyle: React.PropTypes.object,
-    selectLabelStyle: React.PropTypes.object,
-    children: React.PropTypes.any
-  };
-
-  static defaultProps = {
-    items: [],
-    onChange: () => {},
-    cancelLabel: 'cancel',
-    animationType: 'slide',
-    transparent: false
-  };
-
+class Selectbox extends React.Component {
   constructor() {
     super();
     this.state = {
@@ -139,3 +118,27 @@ export default class Selectbox extends React.Component {
     );
   }
 }
+
+Selectbox.propTypes = {
+  items: PropTypes.array,
+  selectedItem: PropTypes.object,
+  promptLabel: PropTypes.string,
+  cancelLabel: PropTypes.string,
+  onChange: PropTypes.func,
+  animationType: PropTypes.string,
+  transparent: PropTypes.bool,
+  style: View.propTypes.style,
+  optionLabelStyle: PropTypes.object,
+  selectLabelStyle: PropTypes.object,
+  children: PropTypes.any
+};
+
+Selectbox.defaultProps = {
+  items: [],
+  onChange: () => {},
+  cancelLabel: 'cancel',
+  animationType: 'slide',
+  transparent: false
+};
+
+export default Selectbox;

@@ -1,5 +1,9 @@
 {
-  "extends": "kingsquare",
+  "extends": "airbnb",
+  "plugins": [
+    "react",
+    "react-native"
+  ],
   "env": {
     "browser": true,
     "node": true

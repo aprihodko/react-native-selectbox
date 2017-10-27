@@ -13,7 +13,7 @@ export default StyleSheet.create({
   overlayStyle: {
     width,
     height,
-    backgroundColor: 'rgba(0,0,0,0.7)'
+    backgroundColor: 'rgba(0,0,0,0.7)',
   },
 
   optionContainer: {
@@ -22,21 +22,21 @@ export default StyleSheet.create({
     height: OPTION_CONTAINER_HEIGHT,
     backgroundColor: 'rgba(255,255,255,0.8)',
     left: width * 0.1,
-    top: (height - OPTION_CONTAINER_HEIGHT) / 2
+    top: (height - OPTION_CONTAINER_HEIGHT) / 2,
   },
 
   optionContainerInnerContainer: {
-    paddingHorizontal: 10
+    paddingHorizontal: 10,
   },
 
   promptContainer: {
     left: width * 0.1,
-    top: ((height - OPTION_CONTAINER_HEIGHT) / 2) - 10
+    top: ((height - OPTION_CONTAINER_HEIGHT) / 2) - 10,
   },
 
   cancelContainer: {
     left: width * 0.1,
-    top: ((height - OPTION_CONTAINER_HEIGHT) / 2) + 10
+    top: ((height - OPTION_CONTAINER_HEIGHT) / 2) + 10,
   },
 
   selectStyle: {
@@ -47,61 +47,61 @@ export default StyleSheet.create({
   selectContainerStyle: {
     flex: 1,
     flexDirection: 'row',
-    alignItems: 'center'
+    alignItems: 'center',
   },
 
   selectLabelStyle: {
     flex: 1,
     color: '#333',
-    fontSize: FONT_SIZE
+    fontSize: FONT_SIZE,
   },
 
   promptStyle: {
     borderRadius: BORDER_RADIUS,
     width: width * 0.8,
     backgroundColor: 'rgba(255,255,255,0.8)',
-    padding: PADDING
+    padding: PADDING,
   },
 
   promptLabelStyle: {
     textAlign: 'center',
     color: '#333',
-    fontSize: FONT_SIZE
+    fontSize: FONT_SIZE,
   },
 
   cancelStyle: {
     borderRadius: BORDER_RADIUS,
     width: width * 0.8,
     backgroundColor: 'rgba(255,255,255,0.8)',
-    padding: PADDING
+    padding: PADDING,
   },
 
   cancelLabelStyle: {
     textAlign: 'center',
     color: '#333',
-    fontSize: FONT_SIZE
+    fontSize: FONT_SIZE,
   },
 
   optionStyle: {
     padding: PADDING,
     borderBottomWidth: 1,
-    borderBottomColor: '#ccc'
+    borderBottomColor: '#ccc',
   },
 
   optionLabelStyle: {
     textAlign: 'center',
     fontSize: FONT_SIZE,
-    color: HIGHLIGHT_COLOR
+    color: HIGHLIGHT_COLOR,
   },
 
   sectionStyle: {
     padding: PADDING * 2,
     borderBottomWidth: 1,
-    borderBottomColor: '#ccc'
+    borderBottomColor: '#ccc',
   },
 
   sectionLabelStyle: {
     textAlign: 'center',
-    fontSize: FONT_SIZE
-  }
+    fontSize: FONT_SIZE,
+  },
 });
