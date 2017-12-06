@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Modal, Text, ScrollView, TouchableOpacity } from 'react-native';
+import { View, Modal, Text, ScrollView, TouchableOpacity, ViewPropTypes } from 'react-native';
 import Icon from 'react-native-vector-icons/FontAwesome';
 import PropTypes from 'prop-types';
 import styles from './Styles';
@@ -127,7 +127,7 @@ Selectbox.propTypes = {
   onChange: PropTypes.func,
   animationType: PropTypes.string,
   transparent: PropTypes.bool,
-  style: View.propTypes.style,
+  style: ViewPropTypes.style,
   optionLabelStyle: PropTypes.object,
   selectLabelStyle: PropTypes.object,
   children: PropTypes.any
